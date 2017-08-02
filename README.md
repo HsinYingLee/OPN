@@ -10,12 +10,13 @@ IEEE International Conference on Computer Vision, ICCV 2017
 1. [Introduction](#introduction)
 1. [Citation](#citation)
 1. [Requirements and Dependencies](#requirements)
-1. [Models and Training Data](#models_and_training_data)
+1. [Models and Training Data](#models-and-training-data)
 1. [Training](#training)
 1. [Testing](#testing)
 
 ### Introduction
 The Order Prediction Network (OPN) is a model that performs representation learning using unlabeled videos. Our method leverage temporal coherence as a supervisory signal by formulating representation learning as a sequence sorting task. The experimental results show that our method compare favorably against state-of-the-art methods on action recognition, image classification and object detection tasks. For more details and evaluation results, please check out our [project webpage](http://vllab1.ucmerced.edu/~hylee/OPN/) and [paper](http://vllab1.ucmerced.edu/~hylee/publication/ICCV17_OPN.pdf).
+![teaser](http://vllab1.ucmerced.edu/~hylee/OPN/images/sorting.gif)
 
 ### Citation
 If you find the code and data useful in your research, please cite:
@@ -32,7 +33,23 @@ Requirements for `Caffe` and `pycaffe` (see: [Caffe installation instructions](h
 Note that the Caffe fork needs to support Batch Normalization to run our code.
 
 ### Models and Training Data
+Training Data
+[UCF](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_train.mat)
+[HMDB](http://vllab1.ucmerced.edu/~hylee/OPN/results/HMDB_train.mat)
+[UCF+HMDB+ACT](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_HMDB_ACT.mat)
+Models
+Unsupervised trained on UCF [here](http://vllab1.ucmerced.edu/~hylee/OPNresults/UCF_OPN.caffemodel)
+Unsupervised trained on UCF+HMDB+ACT (for Pascal VOC 2007) [here](http://vllab1.ucmerced.edu/~hylee/OPNresults/UCFHMDBACT_nobn.caffemodel)
 
 ### Training
 
 ### Testing
+
+**Action Recognition**
+The testing on the UCF-101 and HMDB-51 datasets follows the testing sceme of the [original two-stream ConvNets](https://arxiv.org/pdf/1406.2199.pdf), where we sample 25 RGB frames from each video. From each of the frames we then obtain 10 inputs by cropping and flipping four corners and the center of the frame. 
+
+**Pascal VOC 2007 Classification**
+The training and testing codes are from [https://github.com/philkr/voc-classification](https://github.com/philkr/voc-classification).
+
+**Pascal VOC 2007 Detection**
+The training and testing codes are from [https://github.com/rbgirshick/fast-rcnn](https://github.com/rbgirshick/fast-rcnn)
