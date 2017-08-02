@@ -46,11 +46,13 @@ Note that the Caffe fork needs to support Batch Normalization to run our code.
 
 ### Training
 There are a few lines need to be customized in UCF_datalayers.py, including the training data location in L22-L27 and L84-87. The default setting includes all processing like channel splitting and spatial jittering, feel free to comment them out.
+
         $ $CAFFE_ROOT/build/tool/caffe train -solver prototxt/solver_opn.prototxt
 ### Testing
 
 **Visualization**
-        >> python visualize.py $MODEL $OUTPUT_FIG
+
+        $ python visualize.py $MODEL $OUTPUT_FIG
         
 **Action Recognition**
 The testing on the UCF-101 and HMDB-51 datasets follows the testing sceme of the [original two-stream ConvNets](https://arxiv.org/pdf/1406.2199.pdf), where we sample 25 RGB frames from each video. From each of the frames we then obtain 10 inputs by cropping and flipping four corners and the center of the frame. 
