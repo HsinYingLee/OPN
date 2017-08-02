@@ -35,13 +35,13 @@ Note that the Caffe fork needs to support Batch Normalization to run our code.
 ### Models and Training Data
 **Training Data**
 
-[UCF](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_train.mat)    [HMDB](http://vllab1.ucmerced.edu/~hylee/OPN/results/HMDB_train.mat)    [UCF+HMDB+ACT](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_HMDB_ACT.mat)
+[UCF](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_train.mat)  /  [HMDB](http://vllab1.ucmerced.edu/~hylee/OPN/results/HMDB_train.mat) /   [UCF+HMDB+ACT](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_HMDB_ACT.mat)
 
 **Models**
 
-[Model](http://vllab1.ucmerced.edu/~hylee/OPNresults/UCF_OPN.caffemodel) unsupervised trained on UCF
+[Model](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_OPN.caffemodel) unsupervised trained on UCF
 
-[Model](http://vllab1.ucmerced.edu/~hylee/OPNresults/UCFHMDBACT_nobn.caffemodel) Unsupervised trained on UCF+HMDB+ACT (for Pascal VOC 2007)
+[Model](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCFHMDBACT_nobn.caffemodel) Unsupervised trained on UCF+HMDB+ACT (for Pascal VOC 2007)
 
 ### Training
 
