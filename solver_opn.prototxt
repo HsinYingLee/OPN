@@ -1,0 +1,19 @@
+net: "prototxt/train_opn.prototxt"
+
+test_iter : 100 
+test_interval : 10000
+
+base_lr: 0.01
+momentum: 0.9 
+weight_decay: 0.0005
+lr_policy: "multistep"
+gamma: 0.1
+stepvalue: [130000, 170000]
+display: 20
+max_iter: 170000
+snapshot: 10000
+snapshot_prefix: "snapshot/UCF_4opn"
+
+solver_mode: GPU 
+device_id: 0
+
