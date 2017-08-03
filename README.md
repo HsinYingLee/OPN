@@ -15,7 +15,7 @@ IEEE International Conference on Computer Vision, ICCV 2017
 1. [Testing](#testing)
 
 ### Introduction
-The Order Prediction Network (OPN) is a model that performs representation learning using unlabeled videos. Our method leverage temporal coherence as a supervisory signal by formulating representation learning as a sequence sorting task. The experimental results show that our method compare favorably against state-of-the-art methods on action recognition, image classification and object detection tasks. For more details and evaluation results, please check out our [project webpage](http://vllab1.ucmerced.edu/~hylee/OPN/) and [paper](http://vllab1.ucmerced.edu/~hylee/publication/ICCV17_OPN.pdf).
+The Order Prediction Network (OPN) is a model that performs representation learning using unlabeled videos. Our method leverage temporal coherence as a supervisory signal by formulating representation learning as a sequence sorting task. The experimental results show that our method compares favorably against state-of-the-art methods on action recognition, image classification and object detection tasks. For more details and evaluation results, please check out our [project webpage](http://vllab1.ucmerced.edu/~hylee/OPN/) and [paper](http://vllab1.ucmerced.edu/~hylee/publication/ICCV17_OPN.pdf).
 
 ![teaser](http://vllab1.ucmerced.edu/~hylee/OPN/images/sorting.gif)
 
