@@ -16,7 +16,6 @@ class train_temporal_four(caffe.Layer):
         self.mean = np.array(params['mean'])
         self.batchsize = params['batchsize']
         self.trainval = params['trainval']
-        self.inputtype = params['inputtype'] # 1:patch 2:upsample patch 3: whole I
     
         self.imagesize = 80
         if self.trainval == 'trainval':
