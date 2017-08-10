@@ -40,7 +40,7 @@ Note that the Caffe fork needs to support Batch Normalization to run our code.
 
 **Models**
 
-[Model](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_OPN.caffemodel) unsupervised trained on UCF
+[Model](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_OPN.caffemodel) Unsupervised trained on UCF
 
 [Model](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCFHMDBACT_nobn.caffemodel) Unsupervised trained on UCF+HMDB+ACT (for Pascal VOC 2007)
 
