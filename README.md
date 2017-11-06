@@ -15,9 +15,9 @@ IEEE International Conference on Computer Vision, ICCV 2017
 1. [Testing](#testing)
 
 ### Introduction
-The Order Prediction Network (OPN) is a model that performs representation learning using unlabeled videos. Our method leverage temporal coherence as a supervisory signal by formulating representation learning as a sequence sorting task. The experimental results show that our method compares favorably against state-of-the-art methods on action recognition, image classification and object detection tasks. For more details and evaluation results, please check out our [project webpage](http://vllab1.ucmerced.edu/~hylee/OPN/) and [paper](http://vllab1.ucmerced.edu/~hylee/publication/ICCV17_OPN.pdf).
+The Order Prediction Network (OPN) is a model that performs representation learning using unlabeled videos. Our method leverage temporal coherence as a supervisory signal by formulating representation learning as a sequence sorting task. The experimental results show that our method compares favorably against state-of-the-art methods on action recognition, image classification and object detection tasks. For more details and evaluation results, please check out our [project webpage](http://vllab.ucmerced.edu/hylee/OPN/) and [paper](http://vllab.ucmerced.edu/hylee/publication/ICCV17_OPN.pdf).
 
-![teaser](http://vllab1.ucmerced.edu/~hylee/OPN/images/sorting.gif)
+![teaser](http://vllab.ucmerced.edu/hylee/OPN/images/sorting.gif)
 
 ### Citation
 If you find the code and data useful in your research, please cite:
@@ -36,13 +36,13 @@ Note that the Caffe fork needs to support Batch Normalization to run our code.
 ### Models and Training Data
 **Training Data**
 
-[UCF](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_train.mat)  /  [HMDB](http://vllab1.ucmerced.edu/~hylee/OPN/results/HMDB_train.mat) /   [UCF+HMDB+ACT](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_HMDB_ACT.mat)
+[UCF](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_train.mat)  /  [HMDB](http://vllab.ucmerced.edu/hylee/OPN/results/HMDB_train.mat) /   [UCF+HMDB+ACT](http://vllab.ucmerced.edu/hylee/OPN/results/UCF_HMDB_ACT.mat)
 
 **Models**
 
-[Model](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCF_OPN.caffemodel) Unsupervised trained on UCF
+[Model](http://vllab.ucmerced.edu/hylee/OPN/results/UCF_OPN.caffemodel) Unsupervised trained on UCF
 
-[Model](http://vllab1.ucmerced.edu/~hylee/OPN/results/UCFHMDBACT_nobn.caffemodel) Unsupervised trained on UCF+HMDB+ACT (for Pascal VOC 2007)
+[Model](http://vllab.ucmerced.edu/hylee/OPN/results/UCFHMDBACT_nobn.caffemodel) Unsupervised trained on UCF+HMDB+ACT (for Pascal VOC 2007)
 
 ### Training
 There are a few lines need to be customized in UCF_datalayers.py, including the training data location in L22-L27 and L84-87. The default setting includes all processing like channel splitting and spatial jittering, feel free to comment them out.
